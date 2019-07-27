@@ -1,0 +1,38 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<fragment
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:name="com.example.hew_2.lightdomo.ColorLight" />
+<RadioGroup
+android:id="@+id/rg_tab_bar"
+android:layout_width="match_parent"
+android:layout_height="56dp"
+android:orientation="horizontal"
+android:layout_alignParentBottom="true">
+
+<RadioButton
+    android:id="@+id/color"
+    style="@style/tab_menu_item"
+    android:text="彩光" />
+
+    <RadioButton
+        android:id="@+id/white"
+        style="@style/tab_menu_item"
+        android:text="色温" />
+
+    <RadioButton
+    android:id="@+id/setting"
+    style="@style/tab_menu_item"
+    android:text="设置" />
+</RadioGroup>
+
+</RelativeLayout>
+
+
